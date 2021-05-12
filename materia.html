@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+	
+	<head>
+		<meta charset="UTF-8" />
+		<title>ver</title>
+		<style type="text/css">
+			button {
+				font-size: 1.1rem;
+				background: none;
+				border: 0;
+				margin: 18px;
+				position: relative;
+				transition: all 500ms ease-in-out;
+				color: #AAA;
+	
+			}
+	
+			button:after {
+				content: '';
+				transition: inherit;
+				width: 45px;
+				height: 45px;
+				border-radius: 50%;
+				background: #00FFFF;
+				position: absolute;
+				top: -50%;
+				left: -10%;
+				opacity: 0.3;
+				z-index: -1;
+	
+			}
+	
+			button:hover:after {
+				width: calc(100% + 20px);
+				border-radius: 20px;
+				opacity: 0.6;
+	
+			}
+	
+			body {
+				position: relative;
+				width: 1440px;
+				height: 1024px;
+				background: #181818;
+			}
+	
+			a {
+				font-family: 'Roboto', sans-serif;
+				margin: 20px auto;
+				color: #AAA;
+			}
+	
+			a:link {
+				text-decoration: none;
+			}
+	
+			.container2 {
+				align-items: center;
+				justify-content: center;
+				position: absolute;
+				width: 450px;
+				height: 220px;
+				left: 405px;
+				top: 242px;
+				background: #E5E5E5;
+				border-radius: 10px;
+			}
+	
+			h1 {
+				position: absolute;
+				width: 369px;
+				height: 42px;
+				left: 405px;
+				top: 138px;
+				font-family: Raleway;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 36px;
+				line-height: 42px;
+				color: #E5E5E5;
+	
+			}
+	
+			#linha1 {
+				position: relative;
+				width: 410px;
+				height: 0px;
+				left: 20px;
+				top: 50px;
+				border: 1px solid #000000;
+				transform: rotate(-0.44deg);
+			}
+	
+			.container1 {
+				position: absolute;
+				width: 450px;
+				height: 0px;
+				left: 401px;
+				top: 202px;
+	
+				border: 2px solid #E5E5E5;
+				transform: rotate(0.1deg);
+	
+			}
+	
+			#linha2 {
+				position: relative;
+				width: 410px;
+				height: 0px;
+				left: 20px;
+				top: 90px;
+				border: 1px solid #000000;
+				transform: rotate(-0.44deg);
+	
+			}
+	
+			#linha3 {
+				position: relative;
+				width: 410px;
+				height: 0px;
+				left: 20px;
+				top: 130px;
+	
+				border: 1px solid #000000;
+				transform: rotate(-0.44deg);
+			}
+	
+			#img {
+				position: absolute;
+				width: 30px;
+				height: 30px;
+				left: 100px;
+				top: 170px;
+	
+				background: url(lixeira.png);
+			}
+	
+			#img1 {
+				position: absolute;
+				width: 30px;
+				height: 30px;
+				left: 20px;
+				top: 170px;
+	
+				background: url(lixeira.png);
+			}
+		</style>
+	</head>
+	
+	<body>
+		<h1>Tabela materia</h1>
+		<div class="container1"></div>
+		<div class="container2">
+			<div id="linha1"></div>
+			<div id="linha2"></div>
+			<div id="linha3"></div>
+			<img id="img1" src="../img/lixeira.png">
+			<img id="img" src="../img/lapis-pontiagudo.png">
+		</div>
+	
+	</body>
+	
+	</html>
